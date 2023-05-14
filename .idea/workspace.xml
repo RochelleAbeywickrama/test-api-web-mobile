@@ -5,29 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0ef7998e-b79d-4b83-b68d-75ebf386c399" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/api/common/CommonApi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/api/common/Constants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/api/common/SpecBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/api/config/Config.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/api/functions/GoRestService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/api/model/CommentModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/api/model/PostModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/api/model/TodoModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/api/model/UserModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/api/utils/Helper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/web/pages/basePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/config.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/api/Test_GoRestAPI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/mobile/Test_ValidateAmazonMobileFlow.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/web/Test_ValidateAmazonWebFlow.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/api/api_data.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +47,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Automation/selenium-appium-restassured-test/test-automation/src/main/java/api"
+    "last_opened_file_path": "C:/Automation/selenium-appium-restassured-test/test-api-web-mobile/pom.xml"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -100,7 +80,7 @@
       </method>
     </configuration>
     <configuration name="Test_GoRestAPI" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="test-automation" />
+      <module name="test-api-web-mobile" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="tests.api.*" />
@@ -117,7 +97,7 @@
       </method>
     </configuration>
     <configuration name="Test_GoRestAPI.tc01_ValidateCreateNewUser" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="test-automation" />
+      <module name="test-api-web-mobile" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="tests.api.*" />
@@ -135,7 +115,7 @@
       </method>
     </configuration>
     <configuration name="Test_GoRestAPI.tc05_ValidateCreateNewUserWithMissingFields" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="test-automation" />
+      <module name="test-api-web-mobile" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="tests.api.*" />
@@ -153,7 +133,7 @@
       </method>
     </configuration>
     <configuration name="Test_GoRestAPI.tc08_ValidateCreateNewTodoWithMissingFields" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="test-automation" />
+      <module name="test-api-web-mobile" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="tests.api.*" />
@@ -171,7 +151,7 @@
       </method>
     </configuration>
     <configuration name="Test_GoRestAPI.tc10_ValidateCreateNewUserWithInvalidEmailFormat" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="test-automation" />
+      <module name="test-api-web-mobile" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="tests.api.*" />
