@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0ef7998e-b79d-4b83-b68d-75ebf386c399" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/api/common/CommonApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/api/common/Constants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/api/common/SpecBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/api/config/Config.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/api/functions/GoRestService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/api/model/CommentModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/api/model/PostModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/api/model/TodoModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/api/model/UserModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/api/utils/Helper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/web/pages/basePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/config.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/api/Test_GoRestAPI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/mobile/Test_ValidateAmazonMobileFlow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/web/Test_ValidateAmazonWebFlow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/api/api_data.properties" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="workspaceImportEnabled" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2Php1odoyQRILwbeQEaDFALED8k" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "C:/Automation/selenium-appium-restassured-test/test-automation/src/main/java/api"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Automation\selenium-appium-restassured-test\test-automation\src\main\java\api" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Automation\selenium-appium-restassured-test\test-automation\src\test\resources\mobile" />
+      <recent name="C:\Automation\selenium-appium-restassured-test\test-automation\src\test\resources" />
+      <recent name="C:\Automation\selenium-appium-restassured-test\test-automation\src\main\resources\api" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="tests.web" />
+      <recent name="tests.api" />
+      <recent name="api.config" />
+    </key>
+  </component>
+  <component name="RunManager" selected="TestNG.Test_GoRestAPI">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="web-ui-mobile-test" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="web-ui-mobile-test" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test_GoRestAPI" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="test-automation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.api.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests.api" />
+      <option name="MAIN_CLASS_NAME" value="tests.api.Test_GoRestAPI" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test_GoRestAPI.tc01_ValidateCreateNewUser" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="test-automation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.api.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests.api" />
+      <option name="MAIN_CLASS_NAME" value="tests.api.Test_GoRestAPI" />
+      <option name="METHOD_NAME" value="tc01_ValidateCreateNewUser" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test_GoRestAPI.tc05_ValidateCreateNewUserWithMissingFields" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="test-automation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.api.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests.api" />
+      <option name="MAIN_CLASS_NAME" value="tests.api.Test_GoRestAPI" />
+      <option name="METHOD_NAME" value="tc05_ValidateCreateNewUserWithMissingFields" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test_GoRestAPI.tc08_ValidateCreateNewTodoWithMissingFields" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="test-automation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.api.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests.api" />
+      <option name="MAIN_CLASS_NAME" value="tests.api.Test_GoRestAPI" />
+      <option name="METHOD_NAME" value="tc08_ValidateCreateNewTodoWithMissingFields" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test_GoRestAPI.tc10_ValidateCreateNewUserWithInvalidEmailFormat" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="test-automation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.api.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests.api" />
+      <option name="MAIN_CLASS_NAME" value="tests.api.Test_GoRestAPI" />
+      <option name="METHOD_NAME" value="tc10_ValidateCreateNewUserWithInvalidEmailFormat" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.Test_GoRestAPI" />
+        <item itemvalue="TestNG.Test_GoRestAPI.tc10_ValidateCreateNewUserWithInvalidEmailFormat" />
+        <item itemvalue="TestNG.Test_GoRestAPI.tc05_ValidateCreateNewUserWithMissingFields" />
+        <item itemvalue="TestNG.Test_GoRestAPI.tc08_ValidateCreateNewTodoWithMissingFields" />
+        <item itemvalue="TestNG.Test_GoRestAPI.tc01_ValidateCreateNewUser" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0ef7998e-b79d-4b83-b68d-75ebf386c399" name="Changes" comment="" />
+      <created>1683918957501</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1683918957501</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/tests/api/Test_GoRestAPI.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/api/functions/GoRestService.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/api/functions/GoRestService.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/tests/api/Test_GoRestAPI.java</url>
+          <line>143</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/tests/api/Test_GoRestAPI.java</url>
+          <line>101</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
