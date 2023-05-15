@@ -14,6 +14,7 @@ public class Config {
     private static Properties properties = null;
     private static Properties api_data = null;
     public static TreeMap<String, String> modTestData = null;
+
     public static void loadProperties() {
         properties = new Properties();
         InputStream input;

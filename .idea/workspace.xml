@@ -5,9 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0ef7998e-b79d-4b83-b68d-75ebf386c399" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/web/config/Config.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/web/pages/AddToCartPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/web/pages/BasePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/web/pages/HomePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/web/pages/ProductListPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/web/pages/ProductViewPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/web/pages/ShoppingCartPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/web/utils/Helper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/web/tests/Test_ValidateAmazonWebFlow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/web/utils/BaseUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/api/config/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/config/Config.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/web/pages/basePage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/mobile/Test_ValidateAmazonMobileFlow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/mobile/Test_ValidateAmazonMobileFlow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/web/Test_ValidateAmazonWebFlow.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,11 +61,17 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Automation/selenium-appium-restassured-test/test-api-web-mobile/pom.xml"
+    "last_opened_file_path": "C:/Automation/selenium-appium-restassured-test/test-api-web-mobile/src/test/resources/web",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.runner"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Automation\selenium-appium-restassured-test\test-api-web-mobile\src\test\resources\web" />
+      <recent name="C:\Automation\selenium-appium-restassured-test\test-api-web-mobile\src\main\resources\web\drivers" />
       <recent name="C:\Automation\selenium-appium-restassured-test\test-automation\src\main\java\api" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -65,7 +85,7 @@
       <recent name="api.config" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.Test_GoRestAPI">
+  <component name="RunManager" selected="TestNG.Test_ValidateAmazonWebFlow.searchProduct">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="web-ui-mobile-test" />
       <method v="2">
@@ -96,24 +116,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test_GoRestAPI.tc01_ValidateCreateNewUser" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="test-api-web-mobile" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.api.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests.api" />
-      <option name="MAIN_CLASS_NAME" value="tests.api.Test_GoRestAPI" />
-      <option name="METHOD_NAME" value="tc01_ValidateCreateNewUser" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Test_GoRestAPI.tc05_ValidateCreateNewUserWithMissingFields" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="test-api-web-mobile" />
       <extension name="coverage">
@@ -125,24 +127,6 @@
       <option name="PACKAGE_NAME" value="tests.api" />
       <option name="MAIN_CLASS_NAME" value="tests.api.Test_GoRestAPI" />
       <option name="METHOD_NAME" value="tc05_ValidateCreateNewUserWithMissingFields" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test_GoRestAPI.tc08_ValidateCreateNewTodoWithMissingFields" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="test-api-web-mobile" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.api.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests.api" />
-      <option name="MAIN_CLASS_NAME" value="tests.api.Test_GoRestAPI" />
-      <option name="METHOD_NAME" value="tc08_ValidateCreateNewTodoWithMissingFields" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -168,13 +152,49 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Test_ValidateAmazonWebFlow.searchProduct" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="test-api-web-mobile" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.web.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests.web.tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.web.tests.Test_ValidateAmazonWebFlow" />
+      <option name="METHOD_NAME" value="searchProduct" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test_ValidateAmazonWebFlow.test" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="test-api-web-mobile" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.web.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests.web.tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.web.tests.Test_ValidateAmazonWebFlow" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.Test_ValidateAmazonWebFlow.searchProduct" />
+        <item itemvalue="TestNG.Test_ValidateAmazonWebFlow.test" />
         <item itemvalue="TestNG.Test_GoRestAPI" />
         <item itemvalue="TestNG.Test_GoRestAPI.tc10_ValidateCreateNewUserWithInvalidEmailFormat" />
         <item itemvalue="TestNG.Test_GoRestAPI.tc05_ValidateCreateNewUserWithMissingFields" />
-        <item itemvalue="TestNG.Test_GoRestAPI.tc08_ValidateCreateNewTodoWithMissingFields" />
-        <item itemvalue="TestNG.Test_GoRestAPI.tc01_ValidateCreateNewUser" />
       </list>
     </recent_temporary>
   </component>
@@ -217,7 +237,16 @@
           <line>101</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/tests/web/utils/BaseUtils.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
