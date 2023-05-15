@@ -5,23 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0ef7998e-b79d-4b83-b68d-75ebf386c399" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/web/config/Config.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/web/pages/AddToCartPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/web/pages/BasePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/web/pages/HomePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/web/pages/ProductListPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/web/pages/ProductViewPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/web/pages/ShoppingCartPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/web/utils/Helper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/web/tests/Test_ValidateAmazonWebFlow.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/web/utils/BaseUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/web/common/Constants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/web/Test_ValidateAmazonWebFlow.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/api/config/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/config/Config.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/web/pages/basePage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/mobile/Test_ValidateAmazonMobileFlow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/mobile/Test_ValidateAmazonMobileFlow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/web/Test_ValidateAmazonWebFlow.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/web/config/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/web/config/Config.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/web/pages/AddToCartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/web/pages/AddToCartPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/web/pages/BasePage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/web/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/web/pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/web/pages/ProductListPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/web/pages/ProductListPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/web/pages/ProductViewPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/web/pages/ProductViewPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/web/pages/ShoppingCartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/web/pages/ShoppingCartPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/web/utils/Helper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/web/tests/Test_ValidateAmazonWebFlow.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/web/utils/BaseUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/web/web_data.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/web/web_data.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,18 +55,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Automation/selenium-appium-restassured-test/test-api-web-mobile/src/test/resources/web",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.runner"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Automation/selenium-appium-restassured-test/test-api-web-mobile/src/test/resources/web&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.runner&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Automation\selenium-appium-restassured-test\test-api-web-mobile\src\test\resources\web" />
@@ -80,12 +79,13 @@
       <recent name="C:\Automation\selenium-appium-restassured-test\test-automation\src\main\resources\api" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="web.common" />
       <recent name="tests.web" />
       <recent name="tests.api" />
       <recent name="api.config" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.Test_ValidateAmazonWebFlow.searchProduct">
+  <component name="RunManager" selected="TestNG.Test_ValidateAmazonWebFlow.test_ValidateAmazonShoppingCart">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="web-ui-mobile-test" />
       <method v="2">
@@ -116,36 +116,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test_GoRestAPI.tc05_ValidateCreateNewUserWithMissingFields" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="Test_ValidateAmazonWebFlow" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="test-api-web-mobile" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="tests.api.*" />
+          <option name="PATTERN" value="tests.web.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="tests.api" />
-      <option name="MAIN_CLASS_NAME" value="tests.api.Test_GoRestAPI" />
-      <option name="METHOD_NAME" value="tc05_ValidateCreateNewUserWithMissingFields" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test_GoRestAPI.tc10_ValidateCreateNewUserWithInvalidEmailFormat" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="test-api-web-mobile" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.api.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests.api" />
-      <option name="MAIN_CLASS_NAME" value="tests.api.Test_GoRestAPI" />
-      <option name="METHOD_NAME" value="tc10_ValidateCreateNewUserWithInvalidEmailFormat" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PACKAGE_NAME" value="tests.web.tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.web.Test_ValidateAmazonWebFlow" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -156,12 +137,12 @@
       <module name="test-api-web-mobile" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="tests.web.tests.*" />
+          <option name="PATTERN" value="tests.web.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests.web.tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.web.tests.Test_ValidateAmazonWebFlow" />
+      <option name="MAIN_CLASS_NAME" value="tests.web.Test_ValidateAmazonWebFlow" />
       <option name="METHOD_NAME" value="searchProduct" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -174,13 +155,31 @@
       <module name="test-api-web-mobile" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="tests.web.tests.*" />
+          <option name="PATTERN" value="tests.web.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests.web.tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.web.tests.Test_ValidateAmazonWebFlow" />
+      <option name="MAIN_CLASS_NAME" value="tests.web.Test_ValidateAmazonWebFlow" />
       <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test_ValidateAmazonWebFlow.test_ValidateAmazonShoppingCart" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="test-api-web-mobile" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.web.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests.web.tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.web.Test_ValidateAmazonWebFlow" />
+      <option name="METHOD_NAME" value="test_ValidateAmazonShoppingCart" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -190,11 +189,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.Test_ValidateAmazonWebFlow.test_ValidateAmazonShoppingCart" />
+        <item itemvalue="TestNG.Test_ValidateAmazonWebFlow" />
         <item itemvalue="TestNG.Test_ValidateAmazonWebFlow.searchProduct" />
         <item itemvalue="TestNG.Test_ValidateAmazonWebFlow.test" />
         <item itemvalue="TestNG.Test_GoRestAPI" />
-        <item itemvalue="TestNG.Test_GoRestAPI.tc10_ValidateCreateNewUserWithInvalidEmailFormat" />
-        <item itemvalue="TestNG.Test_GoRestAPI.tc05_ValidateCreateNewUserWithMissingFields" />
       </list>
     </recent_temporary>
   </component>
@@ -238,9 +237,23 @@
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/tests/web/utils/BaseUtils.java</url>
-          <line>26</line>
-          <option name="timeStamp" value="9" />
+          <url>file://$PROJECT_DIR$/src/main/java/web/pages/ProductListPage.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/tests/web/Test_ValidateAmazonWebFlow.java</url>
+          <line>43</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/tests/web/Test_ValidateAmazonWebFlow.java</url>
+          <line>35</line>
+          <properties class="tests.web.Test_ValidateAmazonWebFlow" method="test_ValidateAmazonShoppingCart">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="21" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
