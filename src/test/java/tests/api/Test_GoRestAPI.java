@@ -8,13 +8,10 @@ import api.model.UserModel;
 import api.utils.Helper;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import io.restassured.path.json.JsonPath;
-import io.restassured.response.Response;
 import org.apache.http.HttpStatus;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
-
-import java.util.HashMap;
 
 import static api.common.Constants.*;
 import static api.common.Constants.EMAIL;

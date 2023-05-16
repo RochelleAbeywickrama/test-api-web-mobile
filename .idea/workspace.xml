@@ -5,21 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0ef7998e-b79d-4b83-b68d-75ebf386c399" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ui/pages/BasePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/web/common/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/common/Constants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/web/config/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/config/Config.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/web/pages/AddToCartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/pages/AddToCartPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/web/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/pages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/web/pages/ProductListPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/pages/ProductListPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/web/pages/ProductViewPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/pages/ProductViewPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/web/pages/ShoppingCartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/pages/ShoppingCartPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/mobile/Test_ValidateAmazonMobileFlow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/utils/DriverUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/web/Test_ValidateAmazonWebFlow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/ui/Test_ValidateAmazonShoppingFeature.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/web/web_data.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/ui/web_data.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ui/common/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/common/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ui/utils/DriverUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/utils/DriverUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/api/Test_GoRestAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/api/Test_GoRestAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/ui/Test_ValidateAmazonShoppingFeature.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/ui/Test_ValidateAmazonShoppingFeature.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/ui/web_data.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/ui/web_data.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -216,7 +207,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/tests/api/Test_GoRestAPI.java</url>
-          <line>32</line>
+          <line>29</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -231,12 +222,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/tests/api/Test_GoRestAPI.java</url>
-          <line>143</line>
+          <line>140</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/tests/api/Test_GoRestAPI.java</url>
-          <line>101</line>
+          <line>98</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
