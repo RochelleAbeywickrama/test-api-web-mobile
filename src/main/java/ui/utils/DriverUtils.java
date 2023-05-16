@@ -1,25 +1,23 @@
-package tests.mobile;
+package ui.utils;
 
-import io.appium.java_client.AppiumDriver;
-import io.appium.java_client.android.AndroidDriver;
-import io.appium.java_client.remote.MobileCapabilityType;
-import io.appium.java_client.remote.MobilePlatform;
+import io.github.bonigarcia.wdm.WebDriverManager;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Test;
 
-import java.net.URL;
+import java.util.Collections;
 
-public class Test_ValidateAmazonMobileFlow {
+public class DriverUtils {
+    public DriverUtils() {
+    }
 
+    public static WebDriver setToRunLocally() {
+        WebDriverManager.chromedriver().setup();
+        return new ChromeDriver();
+    }
 
-    public static AppiumDriver appiumDriver;
-
-    @Test
-    public void setup() {
-
+    public static DesiredCapabilities setToRunOnMobile() {
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("platformName", "Android");
@@ -28,10 +26,8 @@ public class Test_ValidateAmazonMobileFlow {
         capabilities.setCapability("platformVersion", "13.0");
         capabilities.setCapability("browserName", "Chrome");
         capabilities.setCapability("automationName", "UiAutomator2");
-//        capabilities.setCapability("appPackage", "com.android.chrome");
-//        capabilities.setCapability("appActivity", "com.google.android.apps.chrome.Main");
         capabilities.setCapability("newCommandTimeout", 240);
-//        capabilities.setCapability("appPackage", "com.android.chrome");
+        capabilities.setCapability("javascriptEnabled", true);
 
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--disable-notifications");
@@ -41,23 +37,10 @@ public class Test_ValidateAmazonMobileFlow {
         options.addArguments("--disable-save-password-bubble");
         options.addArguments("--disable-default-apps");
         options.addArguments("--disable-cookies");
+        options.setExperimentalOption("excludeSwitches", Collections.singletonList("enable-automation"));
+        options.setExperimentalOption("useAutomationExtension", false);
         capabilities.setCapability(ChromeOptions.CAPABILITY, options);
-
-
-        try {
-            appiumDriver = new AndroidDriver(new URL("http://0.0.0.0:4723/wd/hub"), capabilities);
-
-        } catch (Exception e) {
-            System.out.println(e.getMessage());
-            e.printStackTrace();
-        }
-        appiumDriver.get("https://www.amazon.com");
-
+        return capabilities;
     }
 
-    @AfterClass
-    public void tearDown() {
-
-    }
 }
-

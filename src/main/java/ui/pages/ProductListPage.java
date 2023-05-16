@@ -1,4 +1,4 @@
-package web.pages;
+package ui.pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -10,7 +10,7 @@ public class ProductListPage extends HomePage {
     }
 
     private By elePageTitle = By.xpath("//span[text()='Results']");
-    private By lstItem = By.xpath("//div[@cel_widget_id=\"MAIN-SEARCH_RESULTS-1\"]//h2");
+    private By lstItem = By.xpath("//div[@cel_widget_id=\"MAIN-SEARCH_RESULTS-2\"]//h2");
 
 
 

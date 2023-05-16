@@ -1,4 +1,4 @@
-package web.config;
+package ui.config;
 
 import java.io.FileInputStream;
 import java.io.IOException;
