@@ -3,11 +3,10 @@ package web.pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class AddToCartPage {
+public class AddToCartPage extends ProductViewPage{
 
-    private WebDriver driver;
     public AddToCartPage(WebDriver driver) {
-        this.driver = driver;
+        super(driver);
     }
 
     private By eleAddedToCart = By.xpath("//div[@id=\"NATC_SMART_WAGON_CONF_MSG_SUCCESS\"]//span[contains(text(),'Added to Cart')]");

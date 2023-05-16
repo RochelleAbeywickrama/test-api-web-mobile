@@ -3,12 +3,10 @@ package web.pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class ShoppingCartPage  {
-
-    private WebDriver driver;
+public class ShoppingCartPage extends AddToCartPage {
 
     public ShoppingCartPage(WebDriver driver) {
-        this.driver = driver;
+        super(driver);
     }
 
     private By elePageTitle = By.tagName("H1");

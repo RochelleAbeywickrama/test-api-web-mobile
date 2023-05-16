@@ -3,10 +3,10 @@ package web.pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class ProductListPage {
+public class ProductListPage extends HomePage {
 
-    private WebDriver driver;
-    public ProductListPage(WebDriver driver) {   this.driver = driver;
+    public ProductListPage(WebDriver driver) {
+        super(driver);
     }
 
     private By elePageTitle = By.xpath("//span[text()='Results']");
