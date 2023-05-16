@@ -1,11 +1,13 @@
 package api.common;
 
+
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 
 public class CommonApi {
+
 
     public static Response get(RequestSpecification specification) {
         return RestAssured.given()
@@ -17,6 +19,7 @@ public class CommonApi {
                 .extract().response();
     }
 
+
     public static Response post(RequestSpecification specification) {
         return RestAssured.given()
                 .contentType(ContentType.JSON)
@@ -27,6 +30,7 @@ public class CommonApi {
                 .extract().response();
     }
 
+
     public static Response put(RequestSpecification specification) {
         return RestAssured.given()
                 .contentType(ContentType.JSON)
@@ -36,6 +40,7 @@ public class CommonApi {
                 .log().ifError()
                 .extract().response();
     }
+
 
     public static Response delete(RequestSpecification specification) {
         return RestAssured.given()

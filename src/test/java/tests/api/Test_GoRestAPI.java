@@ -7,6 +7,7 @@ import api.model.TodoModel;
 import api.model.UserModel;
 import api.utils.Helper;
 import com.fasterxml.jackson.core.JsonProcessingException;
+import io.qameta.allure.Feature;
 import io.restassured.path.json.JsonPath;
 import org.apache.http.HttpStatus;
 import org.testng.Assert;
@@ -16,13 +17,14 @@ import org.testng.annotations.Test;
 import static api.common.Constants.*;
 import static api.common.Constants.EMAIL;
 
+@Feature("GoRest API")
 public class Test_GoRestAPI {
 
     public static int userId;
     public static int postId;
     public static String USER_EMAIL = Helper.generateRandomNumber() + EMAIL;
 
-    @Test(priority = 1)
+    @Test(priority = 1, description = "Create a new user using POST request")
     public static void tc01_ValidateCreateNewUser() throws JsonProcessingException {
 
         String jsonBody = Helper.getObjectMapper(UserModel.builder()
@@ -39,7 +41,7 @@ public class Test_GoRestAPI {
         Assert.assertEquals(model.getStatus(), STATUS);
     }
 
-    @Test(priority = 2)
+    @Test(priority = 2, description = "Create a new post using POST request")
     public static void tc02_ValidateCreateNewPost() throws JsonProcessingException {
 
         String jsonBody = Helper.getObjectMapper(PostModel.builder()
@@ -54,7 +56,7 @@ public class Test_GoRestAPI {
     }
 
 
-    @Test(priority = 3)
+    @Test(priority = 3, description = "Create a new comment using POST request")
     public static void tc03_ValidateCreateNewComment() throws JsonProcessingException {
 
         String jsonBody = Helper.getObjectMapper(CommentModel.builder()
@@ -71,7 +73,7 @@ public class Test_GoRestAPI {
         Assert.assertEquals(model.getBody(), COMMENT_BODY);
     }
 
-    @Test(priority = 4)
+    @Test(priority = 4, description = "Create a new todo using POST request")
     public static void tc04_ValidateCreateNewTodo() throws JsonProcessingException {
 
         String jsonBody = Helper.getObjectMapper(TodoModel.builder()
@@ -87,7 +89,7 @@ public class Test_GoRestAPI {
         Assert.assertEquals(model.getStatus(), TODO_STATUS);
     }
 
-    @Test(priority = 5)
+    @Test(priority = 5, description = "Create a new user using POST request without a mandatory field")
     public static void tc05_ValidateCreateNewUserWithMissingFields() throws JsonProcessingException {
 
         String jsonBody = Helper.getObjectMapper(UserModel.builder()
@@ -103,7 +105,7 @@ public class Test_GoRestAPI {
         Assert.assertEquals(response.get("[3].message"), STATUS_EMPTY_ERROR);
     }
 
-    @Test(priority = 6)
+    @Test(priority = 6, description = "Create a new post using POST request without a mandatory field")
     public static void tc06_ValidateCreateNewPostWithMissingFields() throws JsonProcessingException {
 
         String jsonBody = Helper.getObjectMapper(PostModel.builder()
@@ -116,7 +118,7 @@ public class Test_GoRestAPI {
     }
 
 
-    @Test(priority = 7)
+    @Test(priority = 7, description = "Create a new comment using POST request without a mandatory field")
     public static void tc07_ValidateCreateNewCommentWithMissingFields() throws JsonProcessingException {
 
         String jsonBody = Helper.getObjectMapper(CommentModel.builder()
@@ -130,7 +132,7 @@ public class Test_GoRestAPI {
         Assert.assertEquals(response.get("[2].message"), BODY_EMPTY_ERROR);
     }
 
-    @Test(priority = 8)
+    @Test(priority = 8, description = "Create a new todo using POST request without a mandatory field")
     public static void tc08_ValidateCreateNewTodoWithMissingFields() throws JsonProcessingException {
 
         String jsonBody = Helper.getObjectMapper(TodoModel.builder()
@@ -143,7 +145,7 @@ public class Test_GoRestAPI {
         Assert.assertEquals(response.get("[1].message"), STATUS_INVALID_ERROR);
     }
 
-    @Test(priority = 9)
+    @Test(priority = 9, description = "Validate creation of two users with the same email address")
     public static void tc09_ValidateCreateNewUserWithExistingUserEmail() throws JsonProcessingException {
 
         String jsonBody = Helper.getObjectMapper(UserModel.builder()
@@ -156,7 +158,7 @@ public class Test_GoRestAPI {
         Assert.assertEquals(response.get("[0].message"), EMAIL_EXISTS_ERROR);
     }
 
-    @Test(priority = 10)
+    @Test(priority = 10, description = "Validate creation of new entries with invalid email address formats")
     public static void tc10_ValidateCreateNewUserWithInvalidEmailFormat() throws JsonProcessingException {
 
         String invalidEmail = "testemail.com";

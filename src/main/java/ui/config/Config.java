@@ -8,7 +8,7 @@ import java.util.Properties;
 public class Config {
 
     private static String configFilePath = System.getProperty("user.dir") + "\\src\\main\\resources\\config.properties";
-    private static String goWebDataFilePath = System.getProperty("user.dir") + "\\src\\test\\resources\\web\\ui_data.properties";
+    private static String goWebDataFilePath = System.getProperty("user.dir") + "\\src\\test\\resources\\ui\\ui_data.properties";
     private static Properties properties = null;
     private static Properties ui_data = null;
     public static void loadProperties() {
