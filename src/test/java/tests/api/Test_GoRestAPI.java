@@ -27,8 +27,8 @@ public class Test_GoRestAPI {
     public static int postId;
     public static String USER_EMAIL = Helper.generateRandomNumber() + EMAIL;
 
-    @Step("Validate Create New User")
-    @Test(priority = 1, description = "Create a new user using POST request")
+    @Test(priority = 1)
+    @Description("Create a new user using POST request")
     public static void tc01_ValidateCreateNewUser() throws JsonProcessingException {
 
         String jsonBody = Helper.getObjectMapper(UserModel.builder()
@@ -45,8 +45,8 @@ public class Test_GoRestAPI {
         Assert.assertEquals(model.getStatus(), STATUS);
     }
 
-    @Step("Validate Create New Post")
-    @Test(priority = 2, description = "Create a new post using POST request")
+    @Test(priority = 2)
+    @Description("Create a new post using POST request")
     public static void tc02_ValidateCreateNewPost() throws JsonProcessingException {
 
         String jsonBody = Helper.getObjectMapper(PostModel.builder()
@@ -61,8 +61,8 @@ public class Test_GoRestAPI {
     }
 
 
-    @Step("Validate Create New Comment")
-    @Test(priority = 3, description = "Create a new comment using POST request")
+    @Test(priority = 3)
+    @Description("Create a new comment using POST request")
     public static void tc03_ValidateCreateNewComment() throws JsonProcessingException {
 
         String jsonBody = Helper.getObjectMapper(CommentModel.builder()
@@ -79,7 +79,6 @@ public class Test_GoRestAPI {
         Assert.assertEquals(model.getBody(), COMMENT_BODY);
     }
 
-    @Step("Validate Create New Todo")
     @Test(priority = 4)
     @Description("Create a new todo using POST request")
     public static void tc04_ValidateCreateNewTodo() throws JsonProcessingException {
@@ -97,7 +96,6 @@ public class Test_GoRestAPI {
         Assert.assertEquals(model.getStatus(), TODO_STATUS);
     }
 
-    @Step("Validate Create New User With Missing Fields")
     @Test(priority = 5)
     @Description("Create a new user using POST request without a mandatory field")
     public static void tc05_ValidateCreateNewUserWithMissingFields() throws JsonProcessingException {
@@ -108,14 +106,14 @@ public class Test_GoRestAPI {
                 .gender("")
                 .status("")
                 .build());
-        JsonPath response = GoRestService.createCommonRequest(CREATE_USER, HttpStatus.SC_UNPROCESSABLE_ENTITY, jsonBody, "", "");
+        JsonPath response = GoRestService.createCommonRequest(CREATE_USER,
+                HttpStatus.SC_UNPROCESSABLE_ENTITY, jsonBody, "", "");
         Assert.assertEquals(response.get("[0].message"), EMAIL_EMPTY_ERROR);
         Assert.assertEquals(response.get("[1].message"), NAME_EMPTY_ERROR);
         Assert.assertEquals(response.get("[2].message"), GENDER_EMPTY_ERROR);
         Assert.assertEquals(response.get("[3].message"), STATUS_EMPTY_ERROR);
     }
 
-    @Step("Validate Create New Post With Missing Fields")
     @Test(priority = 6)
     @Description("Create a new post using POST request without a mandatory field")
     public static void tc06_ValidateCreateNewPostWithMissingFields() throws JsonProcessingException {
@@ -124,13 +122,13 @@ public class Test_GoRestAPI {
                 .title("")
                 .body("")
                 .build());
-        JsonPath response = GoRestService.createCommonRequest(CREATE_POST, HttpStatus.SC_UNPROCESSABLE_ENTITY, jsonBody, "userId", String.valueOf(userId));
+        JsonPath response = GoRestService.createCommonRequest(CREATE_POST,
+                HttpStatus.SC_UNPROCESSABLE_ENTITY, jsonBody, "userId", String.valueOf(userId));
         Assert.assertEquals(response.get("[0].message"), TITLE_EMPTY_ERROR);
         Assert.assertEquals(response.get("[1].message"), BODY_EMPTY_ERROR);
     }
 
 
-    @Step("Validate Create New Comment With Missing Fields")
     @Test(priority = 7)
     @Description("Create a new comment using POST request without a mandatory field")
     public static void tc07_ValidateCreateNewCommentWithMissingFields() throws JsonProcessingException {
@@ -140,15 +138,15 @@ public class Test_GoRestAPI {
                 .email("")
                 .body("")
                 .build());
-        JsonPath response = GoRestService.createCommonRequest(CREATE_COMMENT, HttpStatus.SC_UNPROCESSABLE_ENTITY, jsonBody, "postId", String.valueOf(postId));
+        JsonPath response = GoRestService.createCommonRequest(CREATE_COMMENT,
+                HttpStatus.SC_UNPROCESSABLE_ENTITY, jsonBody, "postId", String.valueOf(postId));
         Assert.assertEquals(response.get("[0].message"), NAME_EMPTY_ERROR);
         Assert.assertEquals(response.get("[1].message"), EMAIL_INVALID_ERROR);
         Assert.assertEquals(response.get("[2].message"), BODY_EMPTY_ERROR);
     }
 
-   @Step("Validate Create New Todo With Missing Fields")
     @Test(priority = 8)
-   @Description("Create a new todo using POST request without a mandatory field")
+    @Description("Create a new todo using POST request without a mandatory field")
     public static void tc08_ValidateCreateNewTodoWithMissingFields() throws JsonProcessingException {
 
         String jsonBody = Helper.getObjectMapper(TodoModel.builder()
@@ -156,12 +154,12 @@ public class Test_GoRestAPI {
                 .due_on("")
                 .status("")
                 .build());
-        JsonPath response = GoRestService.createCommonRequest(CREATE_TODO, HttpStatus.SC_UNPROCESSABLE_ENTITY, jsonBody, "userId", String.valueOf(userId));
+        JsonPath response = GoRestService.createCommonRequest(CREATE_TODO,
+                HttpStatus.SC_UNPROCESSABLE_ENTITY, jsonBody, "userId", String.valueOf(userId));
         Assert.assertEquals(response.get("[0].message"), TITLE_EMPTY_ERROR);
         Assert.assertEquals(response.get("[1].message"), STATUS_INVALID_ERROR);
     }
 
-    @Step("Validate Create New User With Existing User Email")
     @Test(priority = 9)
     @Description("Validate creation of two users with the same email address")
     public static void tc09_ValidateCreateNewUserWithExistingUserEmail() throws JsonProcessingException {
@@ -172,11 +170,11 @@ public class Test_GoRestAPI {
                 .gender(GENDER)
                 .status(STATUS)
                 .build());
-        JsonPath response = GoRestService.createCommonRequest(CREATE_USER, HttpStatus.SC_UNPROCESSABLE_ENTITY, jsonBody, "","");
+        JsonPath response = GoRestService.createCommonRequest(CREATE_USER,
+                HttpStatus.SC_UNPROCESSABLE_ENTITY, jsonBody, "", "");
         Assert.assertEquals(response.get("[0].message"), EMAIL_EXISTS_ERROR);
     }
 
-    @Step("Validate Create New User With Invalid Email Format")
     @Test(priority = 10)
     @Description("Validate creation of new entries with invalid email address formats")
     public static void tc10_ValidateCreateNewUserWithInvalidEmailFormat() throws JsonProcessingException {
@@ -188,7 +186,8 @@ public class Test_GoRestAPI {
                 .gender(GENDER)
                 .status(STATUS)
                 .build());
-        JsonPath response = GoRestService.createCommonRequest(CREATE_USER, HttpStatus.SC_UNPROCESSABLE_ENTITY, jsonBody, "","");
+        JsonPath response = GoRestService.createCommonRequest(CREATE_USER,
+                HttpStatus.SC_UNPROCESSABLE_ENTITY, jsonBody, "", "");
         Assert.assertEquals(response.get("[0].message"), EMAIL_FORMAT_ERROR);
 
     }

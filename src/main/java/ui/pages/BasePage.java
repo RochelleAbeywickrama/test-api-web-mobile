@@ -14,24 +14,27 @@ import static ui.common.Constants.APP_BASE_URL;
 
 public class BasePage {
 
-    // Variables
+    // Static Driver
     public static WebDriver driver;
 
-    // Constructor
+    // Page Constructor
     public BasePage(WebDriver driver) {
         this.driver = driver;
     }
 
 
-    public HomePage launchApplication(){
+    // Launch Application Homepage
+    public HomePage launchApplication() {
         driver.get(APP_BASE_URL);
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         driver.manage().window().maximize();
         return new HomePage(driver);
     }
 
+    // Driver initiation for Web or Mobile
     public HomePage initiateDriver() {
         DesiredCapabilities capabilities = null;
+        // Initiate Mobile workflow
         if (Constants.MOBILE_EXECUTION.equals("true")) {
             capabilities = DriverUtils.setToRunOnMobile();
             try {
@@ -42,15 +45,21 @@ public class BasePage {
                 e.printStackTrace();
             }
         } else {
+            // Initiate Web workflow
             if (Constants.WEB_EXECUTION.equals("true")) {
                 driver = DriverUtils.setToRunLocally();
                 return launchApplication();
             } else {
-                driver =  DriverUtils.setToRunLocally(); // default setting - run locally
+                driver = DriverUtils.setToRunLocally(); // default setting - run locally
                 return launchApplication();
             }
         }
         return launchApplication();
+    }
+
+    // Page Wait till loads
+    public void waitTillPageLoads(){
+        driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
     }
 
 

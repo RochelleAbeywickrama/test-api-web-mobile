@@ -12,9 +12,10 @@ public class HomePage extends BasePage {
         super(driver);
     }
 
-    //Web Elements
-    private By txtSearchBar = By.xpath("//input[@id=\"twotabsearchtextbox\"]");
+    //Web Elements of Home Page
+    private By txtSearchBar = By.xpath("//input[@id='twotabsearchtextbox']");
 
+    // Enter Search term in the Search Bar
      public ProductListPage enterSearchTerm(String searchTerm){
         driver.findElement(txtSearchBar).sendKeys(searchTerm);
          driver.findElement(txtSearchBar).sendKeys(Keys.ENTER);
@@ -22,9 +23,6 @@ public class HomePage extends BasePage {
          return new ProductListPage(driver);
     }
 
-    public void waitTillPageLoads(){
-        driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
-    }
 
 
 }

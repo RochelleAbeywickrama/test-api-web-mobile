@@ -9,9 +9,9 @@
             <class name="tests.api.Test_GoRestAPI" />
         </classes>
     </test>
-<!--    <test name="Web">-->
-<!--        <classes>-->
-<!--            <class name="tests.ui.Test_ValidateAmazonShoppingFeature" />-->
-<!--        </classes>-->
-<!--    </test>-->
+    <test name="Web">
+        <classes>
+            <class name="tests.ui.Test_ValidateAmazonShoppingFeature" />
+        </classes>
+    </test>
 </suite>

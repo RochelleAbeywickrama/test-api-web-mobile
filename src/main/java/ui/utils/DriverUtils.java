@@ -1,6 +1,5 @@
 package ui.utils;
 
-import api.model.CommentModel;
 import io.appium.java_client.remote.MobileCapabilityType;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
@@ -16,11 +15,13 @@ public class DriverUtils {
     public DriverUtils() {
     }
 
+    // Function to initiate Chrome driver for web local execution
     public static WebDriver setToRunLocally() {
         WebDriverManager.chromedriver().setup();
         return new ChromeDriver();
     }
 
+    // Function to set Desired Capabilities for mobile web execution
     public static DesiredCapabilities setToRunOnMobile() {
 
         DesiredCapabilities capabilities = new DesiredCapabilities();

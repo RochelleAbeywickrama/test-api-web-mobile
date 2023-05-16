@@ -9,18 +9,18 @@ public class ProductListPage extends HomePage {
         super(driver);
     }
 
+    // Web elements of Product Results list page
     private By elePageTitle = By.xpath("//span[text()='Results']");
     private By lstItem = By.xpath("//div[@cel_widget_id=\"MAIN-SEARCH_RESULTS-2\"]//h2");
 
 
-
-    public String getPageTitle(){
+    // Get Page title
+    public String getPageTitle() {
         return driver.findElement(elePageTitle).getText();
     }
 
-
-
-    public ProductViewPage clickOnFirstResult(){
+    // Click on the First result of the list
+    public ProductViewPage clickOnFirstResult() {
         driver.findElement(lstItem).click();
         return new ProductViewPage(driver);
     }

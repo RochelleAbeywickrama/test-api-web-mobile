@@ -2,7 +2,6 @@ package tests.ui;
 
 import io.qameta.allure.Description;
 import io.qameta.allure.Feature;
-import io.qameta.allure.Step;
 import org.testng.Assert;
 import org.testng.annotations.*;
 import ui.pages.*;
