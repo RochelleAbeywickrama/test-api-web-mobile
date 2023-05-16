@@ -4,7 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0ef7998e-b79d-4b83-b68d-75ebf386c399" name="Changes" comment="" />
+    <list default="true" id="0ef7998e-b79d-4b83-b68d-75ebf386c399" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/api/common/CommonApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/common/CommonApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/api/common/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/common/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/api/common/SpecBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/common/SpecBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/api/config/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/config/Config.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/api/functions/GoRestService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/functions/GoRestService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ui/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/pages/BasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ui/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/api/Test_GoRestAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/api/Test_GoRestAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/ui/Test_ValidateAmazonShoppingFeature.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/ui/Test_ValidateAmazonShoppingFeature.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/testng/test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testng/test.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -74,7 +87,7 @@
       <recent name="api.config" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.C:/Automation/assignment/src/test/resources/testng/test.xml">
+  <component name="RunManager" selected="TestNG.Test_GoRestAPI">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="web-ui-mobile-test" />
       <method v="2">
@@ -115,17 +128,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test_ValidateAmazonMobileFlow.setup" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="Test_GoRestAPI.tc01_ValidateCreateNewUser" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="test-api-web-mobile" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="tests.mobile.*" />
+          <option name="PATTERN" value="tests.api.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="tests.mobile" />
-      <option name="MAIN_CLASS_NAME" value="tests.mobile.Test_ValidateAmazonMobileFlow" />
-      <option name="METHOD_NAME" value="setup" />
+      <option name="PACKAGE_NAME" value="tests.api" />
+      <option name="MAIN_CLASS_NAME" value="tests.api.Test_GoRestAPI" />
+      <option name="METHOD_NAME" value="tc01_ValidateCreateNewUser" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -133,17 +146,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test_ValidateAmazonShoppingFeature" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="Test_GoRestAPI.tc06_ValidateCreateNewPostWithMissingFields" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="test-api-web-mobile" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="tests.ui.*" />
+          <option name="PATTERN" value="tests.api.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="tests.web.tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.ui.Test_ValidateAmazonShoppingFeature" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="PACKAGE_NAME" value="tests.api" />
+      <option name="MAIN_CLASS_NAME" value="tests.api.Test_GoRestAPI" />
+      <option name="METHOD_NAME" value="tc06_ValidateCreateNewPostWithMissingFields" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -170,11 +184,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.C:/Automation/assignment/src/test/resources/testng/test.xml" />
-        <item itemvalue="TestNG.Test_ValidateAmazonShoppingFeature.test_ValidateAmazonShoppingCart" />
-        <item itemvalue="TestNG.Test_ValidateAmazonMobileFlow.setup" />
         <item itemvalue="TestNG.Test_GoRestAPI" />
-        <item itemvalue="TestNG.Test_ValidateAmazonShoppingFeature" />
+        <item itemvalue="TestNG.Test_GoRestAPI.tc06_ValidateCreateNewPostWithMissingFields" />
+        <item itemvalue="TestNG.C:/Automation/assignment/src/test/resources/testng/test.xml" />
+        <item itemvalue="TestNG.Test_GoRestAPI.tc01_ValidateCreateNewUser" />
+        <item itemvalue="TestNG.Test_ValidateAmazonShoppingFeature.test_ValidateAmazonShoppingCart" />
       </list>
     </recent_temporary>
   </component>
@@ -197,7 +211,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/tests/api/Test_GoRestAPI.java</url>
-          <line>31</line>
+          <line>35</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -212,12 +226,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/tests/api/Test_GoRestAPI.java</url>
-          <line>142</line>
+          <line>158</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/tests/api/Test_GoRestAPI.java</url>
-          <line>100</line>
+          <line>110</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -227,7 +241,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/tests/ui/Test_ValidateAmazonShoppingFeature.java</url>
-          <line>45</line>
+          <line>48</line>
           <option name="timeStamp" value="20" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -247,22 +261,22 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/tests/ui/Test_ValidateAmazonShoppingFeature.java</url>
-          <line>33</line>
+          <line>36</line>
           <option name="timeStamp" value="25" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/ui/pages/BasePage.java</url>
-          <line>41</line>
+          <line>33</line>
           <option name="timeStamp" value="26" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/ui/pages/BasePage.java</url>
-          <line>52</line>
+          <line>44</line>
           <option name="timeStamp" value="27" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/ui/pages/BasePage.java</url>
-          <line>45</line>
+          <line>37</line>
           <option name="timeStamp" value="28" />
         </line-breakpoint>
       </breakpoints>

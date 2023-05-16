@@ -14,21 +14,13 @@ import static ui.common.Constants.APP_BASE_URL;
 
 public class BasePage {
 
+    // Variables
     public static WebDriver driver;
 
+    // Constructor
     public BasePage(WebDriver driver) {
         this.driver = driver;
     }
-
-//    public HomePage launch() {
-//
-//        WebDriverManager.chromedriver().setup();
-//        driver = new ChromeDriver();
-//        driver.get(APP_BASE_URL);
-//        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-//        driver.manage().window().maximize();
-//        return new HomePage(driver);
-//    }
 
 
     public HomePage launchApplication(){
@@ -54,7 +46,7 @@ public class BasePage {
                 driver = DriverUtils.setToRunLocally();
                 return launchApplication();
             } else {
-                driver =  DriverUtils.setToRunLocally(); //default setting - run locally
+                driver =  DriverUtils.setToRunLocally(); // default setting - run locally
                 return launchApplication();
             }
         }

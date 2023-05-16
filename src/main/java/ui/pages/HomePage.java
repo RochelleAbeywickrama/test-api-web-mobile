@@ -11,6 +11,8 @@ public class HomePage extends BasePage {
     public HomePage(WebDriver driver) {
         super(driver);
     }
+
+    //Web Elements
     private By txtSearchBar = By.xpath("//input[@id=\"twotabsearchtextbox\"]");
 
      public ProductListPage enterSearchTerm(String searchTerm){

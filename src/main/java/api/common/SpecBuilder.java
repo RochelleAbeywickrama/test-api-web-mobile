@@ -9,15 +9,7 @@ import static api.common.Constants.TOKEN;
 
 public class SpecBuilder {
 
-    public static RequestSpecification requestSpecificationBuilder() {
-        RequestSpecification requestSpec = new RequestSpecBuilder()
-                .setBaseUri(BASE_URL)
-                .addHeader("Authorization", "Bearer " + TOKEN)
-                .setAccept(ContentType.JSON)
-                .build();
-        return requestSpec;
-    }
-
+    // Request Specification Builder with JSON Body
     public static RequestSpecification requestSpecificationBuilder(String url, String jsonBody) {
         RequestSpecification requestSpec = new RequestSpecBuilder()
                 .setBaseUri(BASE_URL)
@@ -29,6 +21,7 @@ public class SpecBuilder {
         return requestSpec;
     }
 
+    // Request Specification Builder with JSON body & Path Parameters
     public static RequestSpecification requestSpecificationBuilder(String url, String jsonBody, String pathParamName, String pathParam) {
         RequestSpecification requestSpec = new RequestSpecBuilder()
                 .setBaseUri(BASE_URL)

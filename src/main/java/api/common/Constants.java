@@ -2,13 +2,12 @@ package api.common;
 
 import api.config.Config;
 
-import java.util.TreeMap;
-
 public class Constants {
 
     private Constants() {
     }
 
+    // Constants & Endpoints
     public static final String BASE_URL = Config.getProperty("base.url");
     public static final String TOKEN = Config.getProperty("bearer.token");
     public static final String CREATE_USER = "/public/v2/users";
@@ -16,9 +15,6 @@ public class Constants {
     public static final String CREATE_COMMENT = "/public/v2/posts/{postId}/comments";
     public static final String CREATE_TODO = "/public/v2/users/{userId}/todos";
     public static final String GET_USER = "/public/v2/users/{userId}";
-    public static final String GET_POST = "/public/v2/users/{userId}/posts";
-    public static final String GET_COMMENT = "/public/v2/posts/{postId}/comments";
-    public static final String GET_TODO = "/public/v2/users/{userId}/todos";
 
     //Data - User
     public static final String EMAIL = Config.getDataProperty("email");

@@ -13,7 +13,7 @@
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <aspectj.version>1.8.10</aspectj.version>
+        <aspectj.version>1.9.6</aspectj.version>
     </properties>
     <build>
         <pluginManagement>
@@ -37,7 +37,7 @@
                             -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
                         </argLine>
                         <suiteXmlFiles>
-                            <suiteXmlFile>./src/test/resources/testng/test.xml</suiteXmlFile>
+                            <suiteXmlFile>test.xml</suiteXmlFile>
                         </suiteXmlFiles>
                     </configuration>
                     <dependencies>

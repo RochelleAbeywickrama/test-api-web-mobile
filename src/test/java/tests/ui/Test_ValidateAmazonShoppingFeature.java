@@ -1,6 +1,8 @@
 package tests.ui;
 
+import io.qameta.allure.Description;
 import io.qameta.allure.Feature;
+import io.qameta.allure.Step;
 import org.testng.Assert;
 import org.testng.annotations.*;
 import ui.pages.*;
@@ -25,7 +27,8 @@ public class Test_ValidateAmazonShoppingFeature {
         Assert.assertEquals(driver.getTitle(), HOME_PAGE_TITLE);
     }
 
-    @Test(description = "Validate Amazon Shopping Cart Feature")
+    @Test
+    @Description("Validate Amazon Shopping Cart Feature")
     public void test_ValidateAmazonShoppingCart() {
 
         productListPage = homePage.enterSearchTerm(SEARCH_TERM);
